@@ -20,3 +20,7 @@ const port = process.env.PORT || 4005
  
 app.listen(port, () => {console.log(`${port} up & runnin'`)})
 
+try { nonFunction();
+} catch (error) {
+    console.error(error)
+}
